@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# Данные и результаты
+data/
+output/
+
+# Логи
+*.log
+logs/
+
+# Временные диагностические файлы
+debug_search.html
+debug_*.py
+
+# IDE и ОС
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Системные файлы Python
+*.egg-info/
+.eggs/
+build/
+dist/

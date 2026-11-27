@@ -1,0 +1,41 @@
+# Основные настройки проекта
+
+app:
+  name: "Vacancy Hunter v2"
+  version: "0.1.0"
+  log_level: "INFO"
+
+search:
+  city: "Москва"
+  area_id: 1
+  experience:
+    - "between1And3"
+    - "between3And6"
+  salary: 200000
+  pages: 3
+  per_page: 50
+  schedule: "fullDay"
+  employment: "full"
+
+files:
+  queries_sport: "config/queries_sport.txt"
+  queries_corporate: "config/queries_corporate.txt"
+  keywords_sport: "config/keywords_sport.txt"
+  keywords_corporate: "config/keywords_corporate.txt"
+  stopwords: "config/stopwords.txt"
+
+storage:
+  db_path: "data/vacancies.db"
+
+output:
+  dir: "output"
+  excel_file: "output/vacancies.xlsx"
+  report_file: "output/report.md"
+
+scoring:
+  sport_weight: 1.0
+  corporate_weight: 1.0
+  min_score: 2
+  priority_high: 8
+  priority_medium: 5
+  priority_low: 3
